@@ -1,5 +1,5 @@
 CREATE DATABASE cs415;
 
 -- create API User
-CREATE USER cs415apiuser WITH PASSWORD 'cs415ApiUserPass' SUPERUSER;
-GRANT ALL PRIVILEGES ON DATABASE cs415 TO cs415apiuser;
+create user cs415apiuser with password 'cs415ApiUserPass' SUPERUSER;
+grant all privileges on database cs415 to cs415apiuser;

@@ -1,12 +1,13 @@
 services:
   cs415-db:
+    build: ./
     image: postgres:latest
     container_name: container_cs415_db
     restart: always
     stdin_open: true
     tty: true
     environment:
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: cs415ApiUserPass
     volumes:
       - ./create:/docker-entrypoint-initdb.d
     ports:
